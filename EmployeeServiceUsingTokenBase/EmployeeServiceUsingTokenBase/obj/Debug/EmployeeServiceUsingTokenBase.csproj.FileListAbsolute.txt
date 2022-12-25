@@ -114,3 +114,6 @@ C:\Users\joshiayu\OneDrive - Tietoevry\Desktop\Web Api\EmployeeServiceUsingToken
 C:\Users\joshiayu\OneDrive - Tietoevry\Desktop\Web Api\EmployeeServiceUsingTokenBase\EmployeeServiceUsingTokenBase\obj\Debug\EmployeeServiceUsingTokenBase.csproj.CopyComplete
 C:\Users\joshiayu\OneDrive - Tietoevry\Desktop\Web Api\EmployeeServiceUsingTokenBase\EmployeeServiceUsingTokenBase\obj\Debug\EmployeeServiceUsingTokenBase.dll
 C:\Users\joshiayu\OneDrive - Tietoevry\Desktop\Web Api\EmployeeServiceUsingTokenBase\EmployeeServiceUsingTokenBase\obj\Debug\EmployeeServiceUsingTokenBase.pdb
+C:\Users\joshiayu\OneDrive - Tietoevry\Desktop\Web Api\EmployeeServiceUsingTokenBase\EmployeeServiceUsingTokenBase\bin\System.Web.Cors.dll
+C:\Users\joshiayu\OneDrive - Tietoevry\Desktop\Web Api\EmployeeServiceUsingTokenBase\EmployeeServiceUsingTokenBase\bin\System.Web.Http.Cors.dll
+C:\Users\joshiayu\OneDrive - Tietoevry\Desktop\Web Api\EmployeeServiceUsingTokenBase\EmployeeServiceUsingTokenBase\bin\System.Web.Http.Cors.xml
