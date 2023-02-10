@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <table id="bodys" class="table table-bordered">
+
+    </table>
+    <input type="text" name="name" id="username" />
+    <input type="password" name="name" id="password" />
+    <input type="button"  value="Get" id="get"/>
+    <input type="button"  value="Clear" id="cancel"/>
+ 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            var ulEmp = $("#bodys");
+            $("#get").click(function () {
+                alert("Hello")
+                var username = $("#username").val();
+                var password = $("#password").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/token",
+                    headers: {
+                        "Authorization": "Basic " + btoa(username+":" + password)
+                    },
+                    data: {
+                        username: username,
+                        password: password,
+                        grant_type:"password"
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                        sessionStorage.setItem("token", data.access_token)
+                        alert(data)
+                    }
+                })
+            })
+            $("#cancel").click(function () {
+                ulEmp.empty();
+            })
+        })
+    </script>
+</body>
+</html>

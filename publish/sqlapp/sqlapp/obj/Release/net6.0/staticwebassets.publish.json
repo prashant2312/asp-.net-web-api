@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "XD1zI3Ljwa6oudFxjJ5/DHJX8HB/yBPxuAtUpN1zZUc=",
+  "Source": "sqlapp",
+  "BasePath": "_content/sqlapp",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

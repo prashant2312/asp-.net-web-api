@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <table id="bodys" class="table table-bordered">
+    </table>
+    <input type="button" value="Get" id="get" />
+    <input type="button" value="Clear" id="cancel" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ulEmp = $("#bodys");
+            $("#get").click(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "https://localhost:44328/api/employee/GetAllEmp",
+                    dataType: 'json',
+                    success: function (data) {
+                        ulEmp.empty();
+                        $.each(data, function (index, val) {
+                            console.log(val)
+                            ulEmp.append('<th>' + val.name + '</th><th>' + val.gender + "</th>")
+                        })
+                    }
+                })
+            })
+            $("#cancel").click(function () {
+                ulEmp.empty();
+            })
+        })
+    </script>
+</body>
+</html>
